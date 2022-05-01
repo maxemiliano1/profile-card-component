@@ -16,7 +16,7 @@ body {
     background-color: hsl(185, 75%, 39%);
 }
 
-.container::before {
+body::before {
     content: "";
     background: url('../img/bg-pattern-top.svg') no-repeat;
     position: absolute;
@@ -129,4 +129,14 @@ hr {
 
 .status span {
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+    body::after {
+        display: none;
+    }
+
+    body::before {
+        display: none;
+    }
 }
