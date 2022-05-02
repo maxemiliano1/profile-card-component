@@ -14,6 +14,10 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.6rem;
     background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    min-heigth: 100vh;
 }
 
 body::before {
@@ -129,14 +133,4 @@ hr {
 
 .status span {
     font-size: 1.1rem;
-}
-
-@media screen and (max-width: 600px) {
-    body::after {
-        display: none;
-    }
-
-    body::before {
-        display: none;
-    }
 }
